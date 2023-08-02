@@ -1,0 +1,49 @@
+/* CSS for the displayReview container */
+#displayReview {
+    max-width: 600px;
+    margin: 0px auto;
+    margin-left: 430px;
+    margin-right: -200px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+#displayReview h2 {
+   text-align: center;
+}
+
+/* Additional styles for review cards within the container */
+#displayReview .review-card {
+    background-color: #B1907F;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add spacing between review cards */
+}
+
+/* Ensure long text wraps within the review card */
+#displayReview .review-content {
+    word-wrap: break-word;
+}
+
+
+
+#displayReview .review-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#displayReview .review-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#displayReview .review-date {
+    font-size: 14px;
+    color: #888888;
+}
+

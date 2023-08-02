@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.logo-image {
+	border-radius: 50%;
+    height: 150px;
+    display: block;
+    float: left;
+    margin-left: 5%;
+    width: 150px; /* Adjust the width as per your image size */
+	margin-top: 20px;
+}
+	
+.cafe-name {
+	font-family: "Lucida Handwriting";
+	font-size: 50px;
+	background-color: #B1907F;
+    padding: 60px 310px;
+    text-align: center;
+    color: black;
+    width: 100%;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: auto;
+}
+
+.navbtn {
+	margin-left: 65%;
+	margin-right: auto;
+	width: 500px;
+}
+
+.nav-item {
+	background-color: #DEC3A5;
+	color: black;
+	border-color: #DEC3A5;
+	border: 5px solid #DEC3A5;
+	overflow: hidden;
+	padding: 12px 16px;
+	text-align: center;
+	text-decoration: none;	
+	font-size: 20px;
+	margin-left: -8px;
+	margin-right: auto;
+}
+
+.nav-item:hover {
+    background-color: #B1907F; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+    cursor: pointer;
+  }
+	
+.welcome-text {
+	font-size: 50px;
+	font-weight: bold;
+	color: black;
+	margin-left: 61%;
+	margin-right: 120;
+	width: 500px;
+  }
+  
+a:hover {
+    color: brown;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #B1907F;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+	margin-left: -10px;
+	margin-right: auto;
+}
+  
+  /* Add margin to elements above the footer */
+  .column2 {
+    margin-bottom: 200px;
+  }
+  
+  .dropbtn {
+  background-color: #F8F0E3;
+  color: #3A3B3C;
+  padding: 18px;
+  font-size: 15px;
+  border: none;
+font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.loginDrop {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+	color: black;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: white;
+	opacity: 50%;
+}
+  
+.food {
+	font-family: "Lucida Handwriting";
+	font-size: 20px;
+	font-weight: bold;
+}
+  
+.card2 {
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border: none;
+	width: 250%;
+	height: 100%;
+	padding: 9px 50px;
+	margin: 10px 0;
+	margin-left: -100px;
+	margin-right: auto;
+	text-align: center;
+	font-family: Geneva;
+	font-size: 18px;
+	background-color: white;
+	
+}
+
+.row2 {
+	display: flex;
+	flex-direction: row;
+	margin-left: 220px;
+	margin-right: auto;
+}
+
+.container2 {
+  padding: 4px 20px;
+}
+
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column2 {
+  margin-bottom: 200px;
+  margin-right: 300px; /* Add right margin to create space between each card */
+}
+
+.menus {
+	font-size: 36px;
+	text-align: center;
+	margin-left: 44%;
+	margin-right: auto;
+	width: 700px;
+	font-weight: bold;
+}
+</style>
+<body style="background-color: #DEC3A5;">
+
+<!-- Cafe's Name -->
+<section class="content" style="max-width:900px">
+  <img src="images/logo.png" alt="Logo" class="logo-image">
+  <h2 class="cafe-name">GERAI MAKSU</h2>
+
+<!-- Dropdown Buttons -->
+  <div class="dropdown">
+  <button class="dropbtn">ADMIN</button>
+  <div class="dropdown-content">
+    <a href="adminLogin.html">Login</a>
+  </div>
+</div>  
+  
+<!-- Dropdown Buttons -->
+  <div class="dropdown">
+  <button class="dropbtn">CUSTOMER</button>
+  <div class="dropdown-content">
+    <a href="loginpage.php">Login</a>
+    <a href="registerpage.html">Register</a>
+  </div>
+</div>
+
+<!-- Navigation Buttons -->
+<nav class="navbtn">
+  <button class="nav-item" onclick="window.location.href='index.html';">HOME</button>
+  <button class="nav-item" onclick="window.location.href='package.html';">PACKAGE</button>
+  <button class="nav-item" onclick="window.location.href='review.php';">REVIEW</button>
+</nav>
+
+<p class="menus"><i>MENU KAMI</i></p>
+  
+<!-- Foods with prices -->
+<div class="row2">
+  <!-- Card 1 -->
+  <div class="column2">
+    <div class="card2">
+      <div class="container2">
+        <!-- Update button tag to call the showLoginPopup() function -->
+        <button type="button" class="order" style="background-color: #B1907F; color: #3A3B3C; padding: 15px; font-size: 15px; font-weight: bold; border: none; border-radius: 6px;" onmouseover="this.style.backgroundColor='lightgray'" onmouseout="this.style.backgroundColor='#B1907F'" onclick="showLoginPopup()">ORDER</button>
+        <h2 class="food">SET A (15 - 50 pax)</h2>
+        <p>Nasi</p>
+        <p>Ayam masak merah</p>
+        <p>Kari ikan</p>
+        <p>Sambal udang</p>
+        <p>Ulam</p>
+        <p>Sirap</p>
+        <br><br><br><br><br>
+        <p style="font-family: Geneva; font-size: 20px; font-weight: bold">RM15 per pax</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="column2">
+    <div class="card2">
+      <div class="container2">
+        <!-- Update button tag to call the showLoginPopup() function -->
+        <button type="button" class="order" style="background-color: #B1907F; color: #3A3B3C; padding: 15px; font-size: 15px; font-weight: bold; border: none; border-radius: 6px;" onmouseover="this.style.backgroundColor='lightgray'" onmouseout="this.style.backgroundColor='#B1907F'" onclick="showLoginPopup()">ORDER</button>
+        <h2 class="food">SET B (51 - 100 pax)</h2>
+        <p>Nasi</p>
+        <p>Ayam masak merah</p>
+        <p>Kari ikan</p>
+        <p>Sambal udang</p>
+        <p>Sambal sotong</p>
+        <p>Ulam</p>
+        <p>Sirap</p>
+        <br><br><br>
+        <p style="font-family: Geneva; font-size: 20px; font-weight: bold">RM18 per pax</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="column2">
+    <div class="card2">
+      <div class="container2">
+        <!-- Update button tag to call the showLoginPopup() function -->
+        <button type="button" class="order" style="background-color: #B1907F; color: #3A3B3C; padding: 15px; font-size: 15px; font-weight: bold; border: none; border-radius: 6px;" onmouseover="this.style.backgroundColor='lightgray'" onmouseout="this.style.backgroundColor='#B1907F'" onclick="showLoginPopup()">ORDER</button>
+        <h2 class="food">SET C (101 - 150 pax)</h2>
+        <p>Nasi</p>
+        <p>Ayam masak merah</p>
+        <p>Kari ikan</p>
+        <p>Sambal udang</p>
+        <p>Sambal sotong</p>
+        <p>Ikan keli</p>
+        <p>Ulam</p>
+        <p>Jus oren</p>
+        <br>
+        <p style="font-family: Geneva;font-size: 20px; font-weight: bold">RM23 per pax</p>
+      </div>
+    </div>
+  </div>
+</div>  
+<br>
+</section>
+<script>
+  // Function to display the login pop-up message
+  function showLoginPopup() {
+    alert("Please log in first to place an order.");
+  }
+  
+  // Function to open the cart popup (you can customize this function according to your needs)
+  function openCartPopup() {
+    alert("Please login first to view your cart.");
+  }
+</script>
+<!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2023 Gerai Maksu. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background-color: #DEC3A5;">
+
+<!-- Cafe's Name -->
+<section class="content" style="max-width:900px">
+  <img src="images/logo.png" alt="Logo" class="logo-image">
+  <h2 class="cafe-name">GERAI MAKSU</h2>
+  
+<!-- Dropdown Buttons -->
+  <div class="dropdown">
+  <button class="dropbtn">ADMIN</button>
+  <div class="dropdown-content">
+    <a href="adminLogin.html">Login</a>
+  </div>
+</div>   
+<!-- Dropdown Buttons -->
+  <div class="dropdown">
+  <button class="dropbtn">CUSTOMER</button>
+  <div class="dropdown-content">
+    <a href="loginpage.php">Login</a>
+    <a href="registerpage.html">Register</a>
+  </div>
+</div>
+
+<!-- Navigation Buttons -->
+<nav class="navbtn">
+  <button class="nav-item"><a href="index.html">HOME</a>
+  <button class="nav-item"><a href="package.html">PACKAGE</a>
+  <button class="nav-item"><a href="location.html">LOCATION</a>
+</nav>
+
+<center> <h1 class="account">LOGIN</h1> </center>   
+    <form action="loginpage.php" onsubmit="myFunction()" class="bgimage" style="background-image: url('images/bgimage.jpg');">
+        <div class="login">
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="email" required>
+
+			<label for="pswrd"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit" class="loginbtn">Login</button>
+			<label>
+			  <input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		</div>
+
+		<div class="login" style="background-color:#f1f1f1">
+			<button type="cancel" class="cancelbtn">Cancel</button>
+			<span class="pswrd">Forgot <a href="#">password?</a></span>
+		 </div>
+	</form>
+
+<script>
+function myFunction() {
+  alert("Welcome to our cafe");
+}
+</script>
+
+<div class="error-message">
+        <?php echo $errorMsg; ?>
+    </div>
+
+</body>
+</html>
